@@ -1,0 +1,65 @@
+@import "@xyflow/react/dist/style.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.workflow-shell {
+  background: #ffffff;
+}
+
+.dark .workflow-shell {
+  background: #020617;
+}
+
+.dark .workflow-shell .react-flow__background {
+  opacity: 0.6;
+}
+
+.dark .workflow-shell .react-flow__node,
+.dark .workflow-shell .react-flow__node-default,
+.dark .workflow-shell .react-flow__node-input,
+.dark .workflow-shell .react-flow__node-output {
+  background: #0f172a;
+  color: #e2e8f0;
+  border-color: #334155;
+}
+
+.dark .workflow-shell .react-flow__node.selected {
+  box-shadow: 0 0 0 1px #38bdf8;
+}
+
+.dark .workflow-shell .react-flow__edge-path {
+  stroke: #64748b;
+}
+
+.dark .workflow-shell .react-flow__controls {
+  border-color: #334155;
+}
+
+.dark .workflow-shell .react-flow__controls-button {
+  background: #0f172a;
+  border-bottom-color: #334155;
+  color: #cbd5e1;
+}
+
+.dark .workflow-shell .react-flow__minimap {
+  background: #0f172a;
+}
+
+.dark .workflow-shell input:not([type="file"]),
+.dark .workflow-shell textarea,
+.dark .workflow-shell select {
+  background: #0f172a;
+  color: #e2e8f0;
+  border-color: #334155;
+}
+
+.dark .workflow-shell input::placeholder,
+.dark .workflow-shell textarea::placeholder {
+  color: #94a3b8;
+}
